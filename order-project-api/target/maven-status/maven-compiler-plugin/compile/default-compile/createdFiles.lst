@@ -1,0 +1,4 @@
+com\huawei\shallwe\api\dto\response\OrderProcessResp.class
+com\huawei\shallwe\api\provider\OrderProcessProvider.class
+com\huawei\shallwe\api\constants\OrderConstant.class
+com\huawei\shallwe\api\dto\request\OrderProcessReq.class
