@@ -1,0 +1,741 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (generateOopMap.cpp:1623), pid=9408, tid=0x00000000000025e8
+#  Error: ShouldNotReachHere()
+#
+# JRE version: OpenJDK Runtime Environment (8.0_242-b08) (build 1.8.0_242-Huawei_JDK_V100R001C00SPC181B003-b08)
+# Java VM: OpenJDK 64-Bit Server VM (25.242-b08 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000017527000):  VMThread [stack: 0x00000000184e0000,0x00000000185e0000] [id=9704]
+
+Stack: [0x00000000184e0000,0x00000000185e0000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x303dc9]
+V  [jvm.dll+0x256bf2]
+V  [jvm.dll+0x2577ed]
+V  [jvm.dll+0x24e172]
+V  [jvm.dll+0xe1c67]
+V  [jvm.dll+0xe1fee]
+V  [jvm.dll+0xdf65a]
+V  [jvm.dll+0xde7ea]
+V  [jvm.dll+0xa65ab]
+V  [jvm.dll+0xa6392]
+V  [jvm.dll+0x1163e4]
+V  [jvm.dll+0x19c471]
+V  [jvm.dll+0x226eb7]
+V  [jvm.dll+0x22585f]
+V  [jvm.dll+0x225fdf]
+V  [jvm.dll+0x22633d]
+V  [jvm.dll+0x26bc9c]
+C  [ucrtbase.dll+0x21bb2]
+C  [KERNEL32.DLL+0x17034]
+C  [ntdll.dll+0x52651]
+
+VM_Operation (0x0000000018edf570): GetOrSetLocal, mode: safepoint, requested by thread 0x00000000189e4000
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x0000000018a97800 JavaThread "Service Thread" daemon [_thread_blocked, id=18936, stack(0x00000000193e0000,0x00000000194e0000)]
+  0x0000000018a65000 JavaThread "C1 CompilerThread2" daemon [_thread_blocked, id=3408, stack(0x00000000192e0000,0x00000000193e0000)]
+  0x0000000018a0c000 JavaThread "C2 CompilerThread1" daemon [_thread_blocked, id=19748, stack(0x00000000191e0000,0x00000000192e0000)]
+  0x0000000018a03800 JavaThread "C2 CompilerThread0" daemon [_thread_blocked, id=6736, stack(0x00000000190e0000,0x00000000191e0000)]
+  0x00000000189ec800 JavaThread "JDWP Command Reader" daemon [_thread_in_native, id=12740, stack(0x0000000018fe0000,0x00000000190e0000)]
+  0x00000000189e8800 JavaThread "JDWP Event Helper Thread" daemon [_thread_blocked, id=6396, stack(0x0000000018ee0000,0x0000000018fe0000)]
+  0x00000000189e4000 JavaThread "JDWP Transport Listener: dt_socket" daemon [_thread_blocked, id=17196, stack(0x0000000018de0000,0x0000000018ee0000)]
+  0x00000000175dc800 JavaThread "Attach Listener" daemon [_thread_blocked, id=12940, stack(0x00000000188e0000,0x00000000189e0000)]
+  0x000000001758a000 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=22708, stack(0x00000000187e0000,0x00000000188e0000)]
+  0x0000000017558000 JavaThread "Finalizer" daemon [_thread_blocked, id=5376, stack(0x00000000186e0000,0x00000000187e0000)]
+  0x000000001754e000 JavaThread "Reference Handler" daemon [_thread_blocked, id=14080, stack(0x00000000185e0000,0x00000000186e0000)]
+  0x0000000000b30000 JavaThread "main" [_thread_blocked, id=10700, stack(0x0000000002720000,0x0000000002820000)]
+
+Other Threads:
+=>0x0000000017527000 VMThread [stack: 0x00000000184e0000,0x00000000185e0000] [id=9704]
+  0x0000000018a9d000 WatcherThread [stack: 0x00000000194e0000,0x00000000195e0000] [id=22228]
+
+VM state:at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x0000000000ad72b0] Threads_lock - owner thread: 0x0000000017527000
+
+heap address: 0x0000000082800000, size: 2008 MB, Compressed Oops mode: 32-bit
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 3
+Compressed class space size: 1073741824 Address: 0x0000000100000000
+
+Heap:
+ PSYoungGen      total 37888K, used 19516K [0x00000000d6300000, 0x00000000d8d00000, 0x0000000100000000)
+  eden space 32768K, 47% used [0x00000000d6300000,0x00000000d723f560,0x00000000d8300000)
+  from space 5120K, 76% used [0x00000000d8300000,0x00000000d86cfc60,0x00000000d8800000)
+  to   space 5120K, 0% used [0x00000000d8800000,0x00000000d8800000,0x00000000d8d00000)
+ ParOldGen       total 86016K, used 16K [0x0000000082800000, 0x0000000087c00000, 0x00000000d6300000)
+  object space 86016K, 0% used [0x0000000082800000,0x0000000082804000,0x0000000087c00000)
+ Metaspace       used 10603K, capacity 11568K, committed 11776K, reserved 1058816K
+  class space    used 1287K, capacity 1478K, committed 1536K, reserved 1048576K
+
+Card table byte_map: [0x0000000011be0000,0x0000000011fd0000] byte_map_base: 0x00000000117cc000
+
+Marking Bits: (ParMarkBitMap*) 0x0000000071187f40
+ Begin Bits: [0x0000000012670000, 0x00000000145d0000)
+ End Bits:   [0x00000000145d0000, 0x0000000016530000)
+
+Polling page: 0x0000000000a80000
+
+CodeCache: size=245760Kb used=4088Kb max_used=4088Kb free=241671Kb
+ bounds [0x0000000002820000, 0x0000000002c20000, 0x0000000011820000]
+ total_blobs=1390 nmethods=1050 adapters=261
+ compilation: enabled
+
+Compilation events (250 events):
+Event: 3.592 Thread 0x0000000018a65000  919       1       java.util.Arrays$ArrayList::size (6 bytes)
+Event: 3.592 Thread 0x0000000018a65000 nmethod 919 0x0000000002bbbd90 code [0x0000000002bbbee0, 0x0000000002bbbff0]
+Event: 3.593 Thread 0x0000000018a65000  920       3       java.util.stream.AbstractPipeline::isParallel (8 bytes)
+Event: 3.593 Thread 0x0000000018a65000 nmethod 920 0x0000000002bbc090 code [0x0000000002bbc1e0, 0x0000000002bbc350]
+Event: 3.596 Thread 0x0000000018a65000  921       3       java.lang.ClassNotFoundException::<init> (7 bytes)
+Event: 3.597 Thread 0x0000000018a65000 nmethod 921 0x0000000002bbc410 code [0x0000000002bbc580, 0x0000000002bbc7e8]
+Event: 3.598 Thread 0x0000000018a65000  922       3       java.util.Objects::equals (23 bytes)
+Event: 3.599 Thread 0x0000000018a65000 nmethod 922 0x0000000002bbc910 code [0x0000000002bbca80, 0x0000000002bbcd68]
+Event: 3.599 Thread 0x0000000018a65000  923       3       java.lang.invoke.LambdaForm$MH/546718765::linkToTargetMethod (9 bytes)
+Event: 3.599 Thread 0x0000000018a65000 nmethod 923 0x0000000002bbce10 code [0x0000000002bbcf80, 0x0000000002bbd418]
+Event: 3.599 Thread 0x0000000018a65000  924       3       java.lang.invoke.LambdaForm$DMH/532445947::invokeStatic_L_L (14 bytes)
+Event: 3.599 Thread 0x0000000018a65000 nmethod 924 0x0000000002bbd510 code [0x0000000002bbd6a0, 0x0000000002bbdbf8]
+Event: 3.599 Thread 0x0000000018a65000  925       3       java.util.ArrayList::<init> (12 bytes)
+Event: 3.600 Thread 0x0000000018a65000 nmethod 925 0x0000000002bbdd10 code [0x0000000002bbde80, 0x0000000002bbe110]
+Event: 3.603 Thread 0x0000000018a65000  926       1       java.util.stream.ReferencePipeline$StatelessOp::opIsStateful (2 bytes)
+Event: 3.604 Thread 0x0000000018a65000 nmethod 926 0x0000000002bbe250 code [0x0000000002bbe3a0, 0x0000000002bbe4b0]
+Event: 3.604 Thread 0x0000000018a65000  927       3       java.lang.reflect.Constructor::newInstance (87 bytes)
+Event: 3.605 Thread 0x0000000018a65000 nmethod 927 0x0000000002bbe510 code [0x0000000002bbe700, 0x0000000002bbee68]
+Event: 3.605 Thread 0x0000000018a65000  928       3       java.lang.Class::privateGetDeclaredConstructors (85 bytes)
+Event: 3.606 Thread 0x0000000018a65000 nmethod 928 0x0000000002bbf110 code [0x0000000002bbf2e0, 0x0000000002bbf9d8]
+Event: 3.606 Thread 0x0000000018a65000  929       3       sun.reflect.ReflectionFactory::copyConstructor (10 bytes)
+Event: 3.606 Thread 0x0000000018a65000 nmethod 929 0x0000000002bbfcd0 code [0x0000000002bbfe60, 0x0000000002bc0248]
+Event: 3.611 Thread 0x0000000018a65000  930       3       sun.reflect.DelegatingConstructorAccessorImpl::newInstance (9 bytes)
+Event: 3.612 Thread 0x0000000018a65000 nmethod 930 0x0000000002bc0410 code [0x0000000002bc0580, 0x0000000002bc07a8]
+Event: 3.612 Thread 0x0000000018a65000  931       3       sun.reflect.annotation.AnnotationParser::toArray (18 bytes)
+Event: 3.612 Thread 0x0000000018a65000 nmethod 931 0x0000000002bc0850 code [0x0000000002bc09e0, 0x0000000002bc0db8]
+Event: 3.612 Thread 0x0000000018a65000  932       3       java.util.LinkedHashMap$LinkedEntryIterator::next (5 bytes)
+Event: 3.612 Thread 0x0000000018a65000 nmethod 932 0x0000000002bc0ed0 code [0x0000000002bc1040, 0x0000000002bc1328]
+Event: 3.612 Thread 0x0000000018a65000  933       3       java.util.LinkedHashMap$LinkedEntryIterator::next (5 bytes)
+Event: 3.612 Thread 0x0000000018a65000 nmethod 933 0x0000000002bc13d0 code [0x0000000002bc1540, 0x0000000002bc1748]
+Event: 3.616 Thread 0x0000000018a65000  934       3       java.util.stream.PipelineHelper::<init> (5 bytes)
+Event: 3.616 Thread 0x0000000018a65000 nmethod 934 0x0000000002bc17d0 code [0x0000000002bc1920, 0x0000000002bc1ad0]
+Event: 3.617 Thread 0x0000000018a65000  935       3       org.junit.platform.commons.util.Preconditions::notNull (15 bytes)
+Event: 3.618 Thread 0x0000000018a65000 nmethod 935 0x0000000002bc1b90 code [0x0000000002bc1d20, 0x0000000002bc2028]
+Event: 3.618 Thread 0x0000000018a65000  936       3       java.lang.Class::arrayContentsEq (70 bytes)
+Event: 3.618 Thread 0x0000000018a65000 nmethod 936 0x0000000002bc21d0 code [0x0000000002bc2360, 0x0000000002bc2790]
+Event: 3.618 Thread 0x0000000018a65000  937       3       java.util.AbstractCollection::toArray (147 bytes)
+Event: 3.620 Thread 0x0000000018a65000 nmethod 937 0x0000000002bc2910 code [0x0000000002bc2b80, 0x0000000002bc3d38]
+Event: 3.620 Thread 0x0000000018a65000  938       3       java.util.LinkedHashMap::values (25 bytes)
+Event: 3.620 Thread 0x0000000018a65000 nmethod 938 0x0000000002bc4290 code [0x0000000002bc4400, 0x0000000002bc4730]
+Event: 3.620 Thread 0x0000000018a65000  939   !   3       com.sun.proxy.$Proxy0::annotationType (29 bytes)
+Event: 3.621 Thread 0x0000000018a65000 nmethod 939 0x0000000002bc4890 code [0x0000000002bc4a40, 0x0000000002bc4eb8]
+Event: 3.621 Thread 0x0000000018a65000  940       3       sun.reflect.ReflectionFactory::copyMethod (10 bytes)
+Event: 3.621 Thread 0x0000000018a65000 nmethod 940 0x0000000002bc5110 code [0x0000000002bc52a0, 0x0000000002bc5688]
+Event: 3.621 Thread 0x0000000018a65000  941       3       java.lang.reflect.ReflectAccess::copyMethod (5 bytes)
+Event: 3.621 Thread 0x0000000018a65000 nmethod 941 0x0000000002bc5850 code [0x0000000002bc59c0, 0x0000000002bc5be8]
+Event: 3.621 Thread 0x0000000018a65000  943   !   3       com.sun.proxy.$Proxy1::annotationType (29 bytes)
+Event: 3.622 Thread 0x0000000018a65000 nmethod 943 0x0000000002bc5c90 code [0x0000000002bc5e40, 0x0000000002bc62b8]
+Event: 3.622 Thread 0x0000000018a65000  944       3       java.util.Optional::isPresent (13 bytes)
+Event: 3.622 Thread 0x0000000018a65000 nmethod 944 0x0000000002bc6510 code [0x0000000002bc6660, 0x0000000002bc6810]
+Event: 3.622 Thread 0x0000000018a65000  945       3       sun.reflect.annotation.AnnotationInvocationHandler::memberValueHashCode (164 bytes)
+Event: 3.623 Thread 0x0000000018a65000 nmethod 945 0x0000000002bc6890 code [0x0000000002bc6b20, 0x0000000002bc7b48]
+Event: 3.623 Thread 0x0000000018a65000  942       1       java.util.stream.AbstractPipeline::getStreamAndOpFlags (5 bytes)
+Event: 3.623 Thread 0x0000000018a65000 nmethod 942 0x0000000002bc7e50 code [0x0000000002bc7fa0, 0x0000000002bc80b0]
+Event: 3.625 Thread 0x0000000018a65000  946       3       java.lang.invoke.DirectMethodHandle::preparedLambdaForm (230 bytes)
+Event: 3.627 Thread 0x0000000018a65000 nmethod 946 0x0000000002bc8110 code [0x0000000002bc8380, 0x0000000002bc93d8]
+Event: 3.630 Thread 0x0000000018a65000  947       3       jdk.internal.org.objectweb.asm.AnnotationWriter::put (109 bytes)
+Event: 3.631 Thread 0x0000000018a65000 nmethod 947 0x0000000002bc9a50 code [0x0000000002bc9c00, 0x0000000002bca0b8]
+Event: 3.637 Thread 0x0000000018a65000  948       3       java.lang.Class::getInterfaces (41 bytes)
+Event: 3.637 Thread 0x0000000018a65000 nmethod 948 0x0000000002bca390 code [0x0000000002bca540, 0x0000000002bca9b8]
+Event: 3.637 Thread 0x0000000018a65000  949       1       java.util.ArrayList$ArrayListSpliterator::characteristics (4 bytes)
+Event: 3.638 Thread 0x0000000018a65000 nmethod 949 0x0000000002bcab10 code [0x0000000002bcac60, 0x0000000002bcad70]
+Event: 3.638 Thread 0x0000000018a0c000  951       4       java.lang.ref.Reference::<init> (25 bytes)
+Event: 3.639 Thread 0x0000000018a65000  952       1       java.lang.reflect.Constructor::getConstructorAccessor (5 bytes)
+Event: 3.639 Thread 0x0000000018a65000 nmethod 952 0x0000000002bcb190 code [0x0000000002bcb2e0, 0x0000000002bcb3f0]
+Event: 3.639 Thread 0x0000000018a65000  953       3       java.lang.reflect.Constructor::setConstructorAccessor (21 bytes)
+Event: 3.639 Thread 0x0000000018a65000 nmethod 953 0x0000000002bce0d0 code [0x0000000002bce240, 0x0000000002bce608]
+Event: 3.639 Thread 0x0000000018a0c000 nmethod 951 0x0000000002b88e90 code [0x0000000002b88fc0, 0x0000000002b89058]
+Event: 3.642 Thread 0x0000000018a03800  954       4       jdk.internal.org.objectweb.asm.ByteVector::put12 (64 bytes)
+Event: 3.642 Thread 0x0000000018a65000  955       3       jdk.internal.org.objectweb.asm.ClassWriter::toByteArray (1289 bytes)
+Event: 3.648 Thread 0x0000000018a03800 nmethod 954 0x0000000002bcc550 code [0x0000000002bcc6a0, 0x0000000002bcc9f8]
+Event: 3.651 Thread 0x0000000018a65000 nmethod 955 0x0000000002bd0190 code [0x0000000002bd09a0, 0x0000000002bd4778]
+Event: 3.651 Thread 0x0000000018a65000  956       3       sun.reflect.generics.parser.SignatureParser::parsePackageNameAndSimpleClassTypeSignature (139 bytes)
+Event: 3.654 Thread 0x0000000018a65000 nmethod 956 0x0000000002bd6f10 code [0x0000000002bd7280, 0x0000000002bd8c88]
+Event: 3.655 Thread 0x0000000018a65000  957       3       sun.reflect.ConstructorAccessorImpl::<init> (5 bytes)
+Event: 3.655 Thread 0x0000000018a65000 nmethod 957 0x0000000002bcc0d0 code [0x0000000002bcc240, 0x0000000002bcc450]
+Event: 3.663 Thread 0x0000000018a65000  960       3       java.lang.invoke.MethodHandles$Lookup::resolveOrFail (39 bytes)
+Event: 3.665 Thread 0x0000000018a65000 nmethod 960 0x0000000002bccbd0 code [0x0000000002bccde0, 0x0000000002bcdc28]
+Event: 3.684 Thread 0x0000000018a65000  961       3       sun.misc.VM::addFinalRefCount (24 bytes)
+Event: 3.684 Thread 0x0000000018a65000 nmethod 961 0x0000000002bcb450 code [0x0000000002bcb5a0, 0x0000000002bcb750]
+Event: 3.684 Thread 0x0000000018a65000  962   !   3       java.lang.ref.Reference::tryHandlePending (115 bytes)
+Event: 3.685 Thread 0x0000000018a65000 nmethod 962 0x0000000002bced10 code [0x0000000002bcef40, 0x0000000002bcfc28]
+Event: 3.685 Thread 0x0000000018a65000  964   !   3       java.lang.ref.ReferenceQueue::enqueue (119 bytes)
+Event: 3.686 Thread 0x0000000018a65000 nmethod 964 0x0000000002bd9b50 code [0x0000000002bd9d00, 0x0000000002bda4c8]
+Event: 3.686 Thread 0x0000000018a65000  972   !   3       java.lang.ref.Finalizer::remove (94 bytes)
+Event: 3.687 Thread 0x0000000018a65000 nmethod 972 0x0000000002bda6d0 code [0x0000000002bda860, 0x0000000002bdad50]
+Event: 3.687 Thread 0x0000000018a65000  973       3       java.lang.System$2::invokeFinalize (5 bytes)
+Event: 3.687 Thread 0x0000000018a65000 nmethod 973 0x0000000002bce8d0 code [0x0000000002bcea40, 0x0000000002bcec68]
+Event: 3.687 Thread 0x0000000018a65000  974       3       java.lang.ref.Reference::clear (6 bytes)
+Event: 3.688 Thread 0x0000000018a65000 nmethod 974 0x0000000002bdaed0 code [0x0000000002bdb020, 0x0000000002bdb190]
+Event: 3.688 Thread 0x0000000018a65000  965       3       java.lang.ref.Finalizer::access$000 (4 bytes)
+Event: 3.688 Thread 0x0000000018a65000 nmethod 965 0x0000000002bdb210 code [0x0000000002bdb360, 0x0000000002bdb490]
+Event: 3.688 Thread 0x0000000018a65000  968       3       java.lang.ref.ReferenceQueue::reallyPoll (65 bytes)
+Event: 3.688 Thread 0x0000000018a65000 nmethod 968 0x0000000002bdb510 code [0x0000000002bdb680, 0x0000000002bdbaf0]
+Event: 3.688 Thread 0x0000000018a65000  966       3       java.lang.ref.ReferenceQueue::remove (6 bytes)
+Event: 3.689 Thread 0x0000000018a65000 nmethod 966 0x0000000002bdbbd0 code [0x0000000002bdbd40, 0x0000000002bdbf68]
+Event: 3.689 Thread 0x0000000018a65000  967   !   3       java.lang.ref.ReferenceQueue::remove (125 bytes)
+Event: 3.690 Thread 0x0000000018a65000 nmethod 967 0x0000000002bdc010 code [0x0000000002bdc200, 0x0000000002bdcb58]
+Event: 3.690 Thread 0x0000000018a65000  969       3       java.lang.ref.Finalizer::access$100 (6 bytes)
+Event: 3.690 Thread 0x0000000018a65000 nmethod 969 0x0000000002bdcfd0 code [0x0000000002bdd140, 0x0000000002bdd2c8]
+Event: 3.690 Thread 0x0000000018a65000  970   !   3       java.lang.ref.Finalizer::runFinalizer (62 bytes)
+Event: 3.692 Thread 0x0000000018a65000 nmethod 970 0x0000000002bdd390 code [0x0000000002bdd560, 0x0000000002bdddf8]
+Event: 3.692 Thread 0x0000000018a65000  971       3       java.lang.ref.Finalizer::hasBeenFinalized (14 bytes)
+Event: 3.692 Thread 0x0000000018a65000 nmethod 971 0x0000000002bde0d0 code [0x0000000002bde220, 0x0000000002bde3d0]
+Event: 3.705 Thread 0x0000000018a65000  975       3       java.util.jar.Manifest$FastInputStream::readLine (9 bytes)
+Event: 3.705 Thread 0x0000000018a65000 nmethod 975 0x0000000002bde450 code [0x0000000002bde5c0, 0x0000000002bde788]
+Event: 3.705 Thread 0x0000000018a65000  976       3       java.util.jar.Manifest$FastInputStream::peek (38 bytes)
+Event: 3.706 Thread 0x0000000018a65000 nmethod 976 0x0000000002bde850 code [0x0000000002bde9c0, 0x0000000002bdec08]
+Event: 3.706 Thread 0x0000000018a65000  977       3       java.lang.String::<init> (38 bytes)
+Event: 3.706 Thread 0x0000000018a65000 nmethod 977 0x0000000002bded10 code [0x0000000002bdeea0, 0x0000000002bdf208]
+Event: 3.709 Thread 0x0000000018a65000  978       3       java.lang.String::toUpperCase (439 bytes)
+Event: 3.713 Thread 0x0000000018a65000 nmethod 978 0x0000000002bdf390 code [0x0000000002bdf6c0, 0x0000000002be0f58]
+Event: 3.713 Thread 0x0000000018a65000  979       3       java.util.HashMap::tableSizeFor (59 bytes)
+Event: 3.713 Thread 0x0000000018a65000 nmethod 979 0x0000000002be1ed0 code [0x0000000002be2040, 0x0000000002be2250]
+Event: 3.747 Thread 0x0000000018a0c000  980       4       sun.misc.URLClassPath::getResource (83 bytes)
+Event: 3.754 Thread 0x0000000018a65000  981       3       java.util.jar.JarFile::getManifestFromReference (117 bytes)
+Event: 3.756 Thread 0x0000000018a65000 nmethod 981 0x0000000002be2890 code [0x0000000002be2ac0, 0x0000000002be3798]
+Event: 3.756 Thread 0x0000000018a65000  983       3       java.lang.ClassLoader::preDefineClass (109 bytes)
+Event: 3.758 Thread 0x0000000018a65000 nmethod 983 0x0000000002be4190 code [0x0000000002be4460, 0x0000000002be59e8]
+Event: 3.758 Thread 0x0000000018a65000  984   !   3       java.lang.ClassLoader::checkCerts (195 bytes)
+Event: 3.760 Thread 0x0000000018a65000 nmethod 984 0x0000000002be63d0 code [0x0000000002be66a0, 0x0000000002be7dd8]
+Event: 3.760 Thread 0x0000000018a65000  986       3       sun.net.www.protocol.jar.Handler::indexOfBangSlash (52 bytes)
+Event: 3.761 Thread 0x0000000018a65000 nmethod 986 0x0000000002be88d0 code [0x0000000002be8a80, 0x0000000002be9178]
+Event: 3.761 Thread 0x0000000018a65000  987       3       sun.net.www.ParseUtil::canonizeString (195 bytes)
+Event: 3.764 Thread 0x0000000018a65000 nmethod 987 0x0000000002be9410 code [0x0000000002be97c0, 0x0000000002bebce8]
+Event: 3.788 Thread 0x0000000018a65000  988       3       java.io.BufferedReader::ensureOpen (18 bytes)
+Event: 3.788 Thread 0x0000000018a65000 nmethod 988 0x0000000002becdd0 code [0x0000000002becf40, 0x0000000002bed1a8]
+Event: 3.790 Thread 0x0000000018a65000  989       3       java.io.StreamTokenizer::read (38 bytes)
+Event: 3.790 Thread 0x0000000018a65000 nmethod 989 0x0000000002bed290 code [0x0000000002bed440, 0x0000000002bed868]
+Event: 3.790 Thread 0x0000000018a65000  990   !   3       java.io.BufferedReader::read (104 bytes)
+Event: 3.791 Thread 0x0000000018a65000 nmethod 990 0x0000000002bed9d0 code [0x0000000002bedba0, 0x0000000002bee258]
+Event: 3.791 Thread 0x0000000018a65000  991       3       java.io.StreamTokenizer::nextToken (1268 bytes)
+Event: 3.794 Thread 0x0000000018a0c000 nmethod 980 0x0000000002bf26d0 code [0x0000000002bf2980, 0x0000000002bf3d48]
+Event: 3.797 Thread 0x0000000018a03800  992       4       java.lang.String::indexOf (7 bytes)
+Event: 3.799 Thread 0x0000000018a65000 nmethod 991 0x0000000002bf4bd0 code [0x0000000002bf5100, 0x0000000002bf7ef8]
+Event: 3.799 Thread 0x0000000018a65000  993       1       java.lang.Boolean::booleanValue (5 bytes)
+Event: 3.799 Thread 0x0000000018a65000 nmethod 993 0x0000000002bf2410 code [0x0000000002bf2560, 0x0000000002bf2670]
+Event: 3.801 Thread 0x0000000018a03800 nmethod 992 0x0000000002bef250 code [0x0000000002bef3a0, 0x0000000002bef538]
+Event: 3.804 Thread 0x0000000018a65000  994       3       java.lang.String::lastIndexOf (151 bytes)
+Event: 3.804 Thread 0x0000000018a0c000  995  s!   4       sun.misc.URLClassPath::getLoader (243 bytes)
+Event: 3.805 Thread 0x0000000018a65000 nmethod 994 0x0000000002bf1810 code [0x0000000002bf19c0, 0x0000000002bf1f30]
+Event: 3.812 Thread 0x0000000018a65000  996       3       java.lang.Throwable::<init> (39 bytes)
+Event: 3.813 Thread 0x0000000018a65000 nmethod 996 0x0000000002bee950 code [0x0000000002beeae0, 0x0000000002bef0a8]
+Event: 3.813 Thread 0x0000000018a65000  997       3       java.util.jar.JarFile::getManifest (5 bytes)
+Event: 3.813 Thread 0x0000000018a65000 nmethod 997 0x0000000002bf1490 code [0x0000000002bf1600, 0x0000000002bf1788]
+Event: 3.815 Thread 0x0000000018a65000  998       3       sun.misc.URLClassPath$JarLoader$2::getCodeSourceURL (8 bytes)
+Event: 3.815 Thread 0x0000000018a65000 nmethod 998 0x0000000002bf1110 code [0x0000000002bf1260, 0x0000000002bf13d0]
+Event: 3.815 Thread 0x0000000018a65000  999       3       sun.misc.URLClassPath$JarLoader$2::getManifest (26 bytes)
+Event: 3.816 Thread 0x0000000018a65000 nmethod 999 0x0000000002bf07d0 code [0x0000000002bf0980, 0x0000000002bf0ec8]
+Event: 3.816 Thread 0x0000000018a65000 1000       3       java.util.jar.JavaUtilJarAccessImpl::ensureInitialization (5 bytes)
+Event: 3.816 Thread 0x0000000018a65000 nmethod 1000 0x0000000002bf0350 code [0x0000000002bf04c0, 0x0000000002bf06e8]
+Event: 3.816 Thread 0x0000000018a65000 1001  s!   3       java.util.jar.JarFile::ensureInitialization (41 bytes)
+Event: 3.816 Thread 0x0000000018a03800 1004       4       java.util.ArrayList::get (11 bytes)
+Event: 3.816 Thread 0x0000000018a65000 nmethod 1001 0x0000000002befb90 code [0x0000000002befd20, 0x0000000002bf01c8]
+Event: 3.816 Thread 0x0000000018a65000 1002       3       java.net.URLClassLoader::getAndVerifyPackage (109 bytes)
+Event: 3.818 Thread 0x0000000018a03800 nmethod 1004 0x0000000002bef810 code [0x0000000002bef960, 0x0000000002befa58]
+Event: 3.818 Thread 0x0000000018a65000 nmethod 1002 0x0000000002bf99d0 code [0x0000000002bf9cc0, 0x0000000002bfb428]
+Event: 3.818 Thread 0x0000000018a65000 1003       3       sun.misc.URLClassPath$JarLoader$2::getInputStream (15 bytes)
+Event: 3.819 Thread 0x0000000018a65000 nmethod 1003 0x0000000002bf9510 code [0x0000000002bf9680, 0x0000000002bf98c8]
+Event: 3.834 Thread 0x0000000018a65000 1005       3       java.security.CodeSource::matchCerts (254 bytes)
+Event: 3.836 Thread 0x0000000018a65000 nmethod 1005 0x0000000002bfbf90 code [0x0000000002bfc1a0, 0x0000000002bfcd18]
+Event: 3.839 Thread 0x0000000018a65000 1006       3       java.net.URLStreamHandler::equals (45 bytes)
+Event: 3.839 Thread 0x0000000018a65000 nmethod 1006 0x0000000002bfd2d0 code [0x0000000002bfd460, 0x0000000002bfd998]
+Event: 3.845 Thread 0x0000000018a65000 1007       3       sun.net.www.protocol.file.Handler::hostsEqual (69 bytes)
+Event: 3.845 Thread 0x0000000018a65000 nmethod 1007 0x0000000002bfdb10 code [0x0000000002bfdcc0, 0x0000000002bfe428]
+Event: 3.845 Thread 0x0000000018a65000 1008       3       java.net.URLStreamHandler::hostsEqual (75 bytes)
+Event: 3.846 Thread 0x0000000018a65000 nmethod 1008 0x0000000002bfe5d0 code [0x0000000002bfe780, 0x0000000002bff118]
+Event: 3.848 Thread 0x0000000018a65000 1009       3       java.util.Stack::empty (13 bytes)
+Event: 3.848 Thread 0x0000000018a65000 nmethod 1009 0x0000000002bff310 code [0x0000000002bff480, 0x0000000002bff850]
+Event: 3.863 Thread 0x0000000018a65000 1010       3       java.lang.StringCoding::access$000 (6 bytes)
+Event: 3.864 Thread 0x0000000018a65000 nmethod 1010 0x0000000002bffd10 code [0x0000000002bffe80, 0x0000000002c00030]
+Event: 3.868 Thread 0x0000000018a65000 1011       3       java.io.DataInputStream::readUTF (501 bytes)
+Event: 3.871 Thread 0x0000000018a03800 1017       4       java.io.BufferedInputStream::getBufIfOpen (21 bytes)
+Event: 3.872 Thread 0x0000000018a65000 nmethod 1011 0x0000000002c00710 code [0x0000000002c00b20, 0x0000000002c02dc8]
+Event: 3.872 Thread 0x0000000018a65000 1012       3       java.io.DataInputStream::readFully (63 bytes)
+Event: 3.872 Thread 0x0000000018a03800 nmethod 1017 0x0000000002c07310 code [0x0000000002c07440, 0x0000000002c074b8]
+Event: 3.872 Thread 0x0000000018a65000 nmethod 1012 0x0000000002c069d0 code [0x0000000002c06b80, 0x0000000002c07048]
+Event: 3.872 Thread 0x0000000018a65000 1013  s    3       java.io.BufferedInputStream::read (113 bytes)
+Event: 3.872 Thread 0x0000000018a03800 1020  s    4       java.io.BufferedInputStream::read (49 bytes)
+Event: 3.874 Thread 0x0000000018a65000 nmethod 1013 0x0000000002c059d0 code [0x0000000002c05bc0, 0x0000000002c06578]
+Event: 3.874 Thread 0x0000000018a65000 1014       3       java.io.DataInputStream::readUnsignedShort (39 bytes)
+Event: 3.874 Thread 0x0000000018a65000 nmethod 1014 0x0000000002c052d0 code [0x0000000002c05460, 0x0000000002c05828]
+Event: 3.874 Thread 0x0000000018a65000 1016       3       java.io.DataInputStream::readUTF (5 bytes)
+Event: 3.874 Thread 0x0000000018a65000 nmethod 1016 0x0000000002c04f50 code [0x0000000002c050c0, 0x0000000002c05248]
+Event: 3.874 Thread 0x0000000018a65000 1015       3       java.io.BufferedInputStream::read1 (108 bytes)
+Event: 3.875 Thread 0x0000000018a65000 nmethod 1015 0x0000000002c07550 code [0x0000000002c07760, 0x0000000002c08098]
+Event: 3.875 Thread 0x0000000018a65000 1018       3       java.io.DataInputStream::readShort (40 bytes)
+Event: 3.876 Thread 0x0000000018a65000 nmethod 1018 0x0000000002c04850 code [0x0000000002c049e0, 0x0000000002c04da8]
+Event: 3.876 Thread 0x0000000018a65000 1019       3       java.io.DataInputStream::readFully (9 bytes)
+Event: 3.876 Thread 0x0000000018a65000 nmethod 1019 0x0000000002c0b590 code [0x0000000002c0b700, 0x0000000002c0b928]
+Event: 3.876 Thread 0x0000000018a03800 nmethod 1020 0x0000000002c0ba10 code [0x0000000002c0bb60, 0x0000000002c0bf88]
+Event: 3.886 Thread 0x0000000018a65000 1021       1       sun.util.locale.BaseLocale::getLanguage (5 bytes)
+Event: 3.886 Thread 0x0000000018a65000 nmethod 1021 0x0000000002c0aa90 code [0x0000000002c0abe0, 0x0000000002c0acf0]
+Event: 3.899 Thread 0x0000000018a0c000 nmethod 995 0x0000000002c0f9d0 code [0x0000000002c0fc60, 0x0000000002c11df0]
+Event: 3.927 Thread 0x0000000018a65000 1022       1       java.util.stream.Collectors$CollectorImpl::supplier (5 bytes)
+Event: 3.927 Thread 0x0000000018a65000 nmethod 1022 0x0000000002c09b50 code [0x0000000002c09ca0, 0x0000000002c09db0]
+Event: 3.927 Thread 0x0000000018a65000 1025       3       java.util.Optional::empty (6 bytes)
+Event: 3.927 Thread 0x0000000018a65000 nmethod 1025 0x0000000002c09850 code [0x0000000002c099a0, 0x0000000002c09ad0]
+Event: 3.927 Thread 0x0000000018a65000 1023       1       java.util.stream.Collectors$CollectorImpl::accumulator (5 bytes)
+Event: 3.927 Thread 0x0000000018a65000 nmethod 1023 0x0000000002c09590 code [0x0000000002c096e0, 0x0000000002c097f0]
+Event: 3.927 Thread 0x0000000018a65000 1024       1       java.util.stream.Collectors$CollectorImpl::combiner (5 bytes)
+Event: 3.927 Thread 0x0000000018a65000 nmethod 1024 0x0000000002c092d0 code [0x0000000002c09420, 0x0000000002c09530]
+Event: 3.927 Thread 0x0000000018a65000 1026       3       sun.reflect.annotation.AnnotationInvocationHandler::hashCodeImpl (69 bytes)
+Event: 3.928 Thread 0x0000000018a65000 nmethod 1026 0x0000000002c0eb50 code [0x0000000002c0ed60, 0x0000000002c0f6d8]
+Event: 3.929 Thread 0x0000000018a65000 1027       3       java.util.regex.Pattern$Single::isSatisfiedBy (14 bytes)
+Event: 3.929 Thread 0x0000000018a65000 nmethod 1027 0x0000000002c08f50 code [0x0000000002c090a0, 0x0000000002c09250]
+Event: 3.931 Thread 0x0000000018a65000 1028       3       java.util.stream.ReferencePipeline$2$1::accept (27 bytes)
+Event: 3.932 Thread 0x0000000018a65000 nmethod 1028 0x0000000002c08990 code [0x0000000002c08b00, 0x0000000002c08e38]
+Event: 3.934 Thread 0x0000000018a03800 1029       4       java.lang.Object::equals (11 bytes)
+Event: 3.935 Thread 0x0000000018a65000 1030       3       java.util.stream.StreamOpFlag::combineOpFlags (9 bytes)
+Event: 3.935 Thread 0x0000000018a03800 nmethod 1029 0x0000000002c08790 code [0x0000000002c088c0, 0x0000000002c08938]
+Event: 3.935 Thread 0x0000000018a65000 nmethod 1030 0x0000000002c0ce90 code [0x0000000002c0d000, 0x0000000002c0d210]
+Event: 3.935 Thread 0x0000000018a65000 1031       3       java.util.stream.StreamOpFlag::getMask (30 bytes)
+Event: 3.935 Thread 0x0000000018a65000 nmethod 1031 0x0000000002c0cb10 code [0x0000000002c0cc60, 0x0000000002c0ce10]
+Event: 3.936 Thread 0x0000000018a65000 1032       3       java.lang.String::toString (2 bytes)
+Event: 3.936 Thread 0x0000000018a65000 nmethod 1032 0x0000000002c0c810 code [0x0000000002c0c960, 0x0000000002c0cab0]
+Event: 3.947 Thread 0x0000000018a65000 1033       3       java.lang.invoke.MethodHandle::setVarargs (38 bytes)
+Event: 3.949 Thread 0x0000000018a65000 nmethod 1033 0x0000000002c15550 code [0x0000000002c15740, 0x0000000002c16208]
+Event: 3.949 Thread 0x0000000018a65000 1034       3       java.lang.invoke.MemberName::isVarargs (23 bytes)
+Event: 3.949 Thread 0x0000000018a65000 nmethod 1034 0x0000000002c14cd0 code [0x0000000002c14e60, 0x0000000002c153d0]
+Event: 3.952 Thread 0x0000000018a65000 1036       3       java.lang.Character::codePointAtImpl (41 bytes)
+Event: 3.952 Thread 0x0000000018a65000 nmethod 1036 0x0000000002c144d0 code [0x0000000002c14660, 0x0000000002c14af0]
+Event: 3.952 Thread 0x0000000018a65000 1037       3       java.lang.Character::isSurrogate (18 bytes)
+Event: 3.953 Thread 0x0000000018a65000 nmethod 1037 0x0000000002c0c0d0 code [0x0000000002c0c220, 0x0000000002c0c3f0]
+Event: 3.956 Thread 0x0000000018a65000 1038       3       sun.misc.Unsafe::getAndAddInt (27 bytes)
+Event: 3.956 Thread 0x0000000018a65000 nmethod 1038 0x0000000002c14050 code [0x0000000002c141c0, 0x0000000002c143d0]
+Event: 3.956 Thread 0x0000000018a65000 1039       3       java.lang.invoke.MethodHandleNatives::isCallerSensitive (29 bytes)
+Event: 3.957 Thread 0x0000000018a65000 nmethod 1039 0x0000000002c16610 code [0x0000000002c167c0, 0x0000000002c16e68]
+Event: 3.957 Thread 0x0000000018a65000 1040       3       java.lang.invoke.MethodHandleNatives::canBeCalledVirtual (132 bytes)
+Event: 3.957 Thread 0x0000000018a03800 1041       4       jdk.internal.org.objectweb.asm.Item::isEqualTo (354 bytes)
+Event: 3.958 Thread 0x0000000018a65000 nmethod 1040 0x0000000002c17090 code [0x0000000002c17280, 0x0000000002c17bb8]
+Event: 3.958 Thread 0x0000000018a65000 1042       3       jdk.internal.org.objectweb.asm.MethodVisitor::visitInsn (16 bytes)
+Event: 3.958 Thread 0x0000000018a65000 nmethod 1042 0x0000000002c13bd0 code [0x0000000002c13d40, 0x0000000002c13fa8]
+Event: 3.959 Thread 0x0000000018a65000 1043       3       java.lang.invoke.MethodHandle::asType (28 bytes)
+Event: 3.959 Thread 0x0000000018a65000 nmethod 1043 0x0000000002c17e50 code [0x0000000002c17fc0, 0x0000000002c18368]
+Event: 3.959 Thread 0x0000000018a65000 1045       1       java.util.Arrays$ArrayList::get (7 bytes)
+Event: 3.959 Thread 0x0000000018a65000 nmethod 1045 0x0000000002c18490 code [0x0000000002c185e0, 0x0000000002c18710]
+Event: 3.959 Thread 0x0000000018a65000 1044       3       java.lang.invoke.MethodHandle::asTypeCached (21 bytes)
+Event: 3.960 Thread 0x0000000018a65000 nmethod 1044 0x0000000002c187d0 code [0x0000000002c18940, 0x0000000002c18b30]
+Event: 3.975 Thread 0x0000000018a03800 nmethod 1041 0x0000000002c1a810 code [0x0000000002c1aae0, 0x0000000002c1b8d8]
+Event: 11.868 Thread 0x0000000018a65000 1046       3       java.security.CodeSource::<init> (40 bytes)
+Event: 11.868 Thread 0x0000000018a65000 nmethod 1046 0x0000000002c1bed0 code [0x0000000002c1c040, 0x0000000002c1c468]
+Event: 11.868 Thread 0x0000000018a65000 1047   !   3       java.security.SecureClassLoader::getProtectionDomain (114 bytes)
+Event: 11.869 Thread 0x0000000018a65000 nmethod 1047 0x0000000002c1c590 code [0x0000000002c1c780, 0x0000000002c1d328]
+Event: 11.869 Thread 0x0000000018a65000 1048       3       java.lang.CharacterData::of (120 bytes)
+Event: 11.869 Thread 0x0000000018a65000 nmethod 1048 0x0000000002c1d910 code [0x0000000002c1dac0, 0x0000000002c1dfd0]
+Event: 11.870 Thread 0x0000000018a65000 1049   !   3       java.net.URLClassLoader::definePackageInternal (81 bytes)
+Event: 11.871 Thread 0x0000000018a65000 nmethod 1049 0x0000000002c1e210 code [0x0000000002c1e440, 0x0000000002c1efb8]
+Event: 153.612 Thread 0x0000000018a65000 1050  s    1       java.lang.StringBuffer::length (5 bytes)
+Event: 153.612 Thread 0x0000000018a65000 nmethod 1050 0x0000000002c1f510 code [0x0000000002c1f660, 0x0000000002c1f8d0]
+
+GC Heap History (2 events):
+Event: 3.674 GC heap before
+{Heap before GC invocations=1 (full 0):
+ PSYoungGen      total 37888K, used 32768K [0x00000000d6300000, 0x00000000d8d00000, 0x0000000100000000)
+  eden space 32768K, 100% used [0x00000000d6300000,0x00000000d8300000,0x00000000d8300000)
+  from space 5120K, 0% used [0x00000000d8800000,0x00000000d8800000,0x00000000d8d00000)
+  to   space 5120K, 0% used [0x00000000d8300000,0x00000000d8300000,0x00000000d8800000)
+ ParOldGen       total 86016K, used 0K [0x0000000082800000, 0x0000000087c00000, 0x00000000d6300000)
+  object space 86016K, 0% used [0x0000000082800000,0x0000000082800000,0x0000000087c00000)
+ Metaspace       used 8382K, capacity 9276K, committed 9472K, reserved 1056768K
+  class space    used 1043K, capacity 1236K, committed 1280K, reserved 1048576K
+Event: 3.683 GC heap after
+Heap after GC invocations=1 (full 0):
+ PSYoungGen      total 37888K, used 3903K [0x00000000d6300000, 0x00000000d8d00000, 0x0000000100000000)
+  eden space 32768K, 0% used [0x00000000d6300000,0x00000000d6300000,0x00000000d8300000)
+  from space 5120K, 76% used [0x00000000d8300000,0x00000000d86cfc60,0x00000000d8800000)
+  to   space 5120K, 0% used [0x00000000d8800000,0x00000000d8800000,0x00000000d8d00000)
+ ParOldGen       total 86016K, used 16K [0x0000000082800000, 0x0000000087c00000, 0x00000000d6300000)
+  object space 86016K, 0% used [0x0000000082800000,0x0000000082804000,0x0000000087c00000)
+ Metaspace       used 8382K, capacity 9276K, committed 9472K, reserved 1056768K
+  class space    used 1043K, capacity 1236K, committed 1280K, reserved 1048576K
+}
+
+Deoptimization events (4 events):
+Event: 1.258 Thread 0x0000000000b30000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000000000292083c method=java.lang.String.hashCode()I @ 14
+Event: 3.463 Thread 0x0000000000b30000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x0000000002b132d8 method=jdk.internal.org.objectweb.asm.Type.getArgumentsAndReturnSizes(Ljava/lang/String;)I @ 88
+Event: 3.802 Thread 0x0000000000b30000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x0000000002b9b0b4 method=java.lang.String.lastIndexOf([CII[CIII)I @ 17
+Event: 3.952 Thread 0x0000000000b30000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00000000029ea700 method=java.lang.CharacterData.of(I)Ljava/lang/CharacterData; @ 4
+
+Classes redefined (8 events):
+Event: 261.529 Thread 0x0000000017527000 redefined class name=CglibProxyTest, count=1
+Event: 261.537 Thread 0x0000000017527000 redefined class name=CglibProxyTest$BlogModel$BlogContentModel, count=1
+Event: 261.546 Thread 0x0000000017527000 redefined class name=CglibProxyTest$BlogModel, count=1
+Event: 261.553 Thread 0x0000000017527000 redefined class name=CglibProxyTest$BlogModel$1, count=1
+Event: 433.213 Thread 0x0000000017527000 redefined class name=CglibProxyTest, count=2
+Event: 433.231 Thread 0x0000000017527000 redefined class name=CglibProxyTest$BlogModel$BlogContentModel, count=2
+Event: 433.244 Thread 0x0000000017527000 redefined class name=CglibProxyTest$BlogModel, count=2
+Event: 433.252 Thread 0x0000000017527000 redefined class name=CglibProxyTest$BlogModel$1, count=2
+
+Internal exceptions (25 events):
+Event: 0.249 Thread 0x0000000000b30000 Exception <a 'java/lang/NoSuchMethodError': Method sun.misc.Unsafe.defineClass(Ljava/lang/String;[BII)Ljava/lang/Class; name or signature does not match> (0x00000000d6307cc8) thrown at [D:\jenkins\workspace\JDK8u-WIN64\open_source\openjdk\jdk8u-shenandoah
+Event: 0.249 Thread 0x0000000000b30000 Exception <a 'java/lang/NoSuchMethodError': Method sun.misc.Unsafe.prefetchRead(Ljava/lang/Object;J)V name or signature does not match> (0x00000000d6307fb0) thrown at [D:\jenkins\workspace\JDK8u-WIN64\open_source\openjdk\jdk8u-shenandoah-aarch64-shenandoa
+Event: 1.366 Thread 0x0000000000b30000 Exception <a 'java/security/PrivilegedActionException'> (0x00000000d67809c0) thrown at [D:\jenkins\workspace\JDK8u-WIN64\open_source\openjdk\jdk8u-shenandoah-aarch64-shenandoah-jdk8u242-b08\hotspot\src\share\vm\prims\jvm.cpp, line 1501]
+Event: 1.366 Thread 0x0000000000b30000 Exception <a 'java/security/PrivilegedActionException'> (0x00000000d6780db8) thrown at [D:\jenkins\workspace\JDK8u-WIN64\open_source\openjdk\jdk8u-shenandoah-aarch64-shenandoah-jdk8u242-b08\hotspot\src\share\vm\prims\jvm.cpp, line 1501]
+Event: 1.369 Thread 0x0000000000b30000 Exception <a 'java/security/PrivilegedActionException'> (0x00000000d6784760) thrown at [D:\jenkins\workspace\JDK8u-WIN64\open_source\openjdk\jdk8u-shenandoah-aarch64-shenandoah-jdk8u242-b08\hotspot\src\share\vm\prims\jvm.cpp, line 1501]
+Event: 1.369 Thread 0x0000000000b30000 Exception <a 'java/security/PrivilegedActionException'> (0x00000000d6784b58) thrown at [D:\jenkins\workspace\JDK8u-WIN64\open_source\openjdk\jdk8u-shenandoah-aarch64-shenandoah-jdk8u242-b08\hotspot\src\share\vm\prims\jvm.cpp, line 1501]
+Event: 1.370 Thread 0x0000000000b30000 Exception <a 'java/security/PrivilegedActionException'> (0x00000000d6786248) thrown at [D:\jenkins\workspace\JDK8u-WIN64\open_source\openjdk\jdk8u-shenandoah-aarch64-shenandoah-jdk8u242-b08\hotspot\src\share\vm\prims\jvm.cpp, line 1501]
+Event: 1.370 Thread 0x0000000000b30000 Exception <a 'java/security/PrivilegedActionException'> (0x00000000d6786640) thrown at [D:\jenkins\workspace\JDK8u-WIN64\open_source\openjdk\jdk8u-shenandoah-aarch64-shenandoah-jdk8u242-b08\hotspot\src\share\vm\prims\jvm.cpp, line 1501]
+Event: 1.685 Thread 0x0000000000b30000 Exception <a 'java/lang/NoSuchFieldError': method resolution failed> (0x00000000d69b1338) thrown at [D:\jenkins\workspace\JDK8u-WIN64\open_source\openjdk\jdk8u-shenandoah-aarch64-shenandoah-jdk8u242-b08\hotspot\src\share\vm\prims\methodHandles.cpp, line 1
+Event: 1.693 Thread 0x0000000000b30000 Exception <a 'java/lang/NoSuchFieldError': method resolution failed> (0x00000000d69bfc88) thrown at [D:\jenkins\workspace\JDK8u-WIN64\open_source\openjdk\jdk8u-shenandoah-aarch64-shenandoah-jdk8u242-b08\hotspot\src\share\vm\prims\methodHandles.cpp, line 1
+Event: 2.627 Thread 0x0000000000b30000 Exception <a 'java/lang/NoSuchMethodError': java.lang.Object.lambda$or$2(Ljava/util/function/Predicate;Ljava/lang/Object;)Z> (0x00000000d728b918) thrown at [D:\jenkins\workspace\JDK8u-WIN64\open_source\openjdk\jdk8u-shenandoah-aarch64-shenandoah-jdk8u242-
+Event: 2.678 Thread 0x0000000000b30000 Exception <a 'java/lang/IncompatibleClassChangeError': Found class java.lang.Object, but interface was expected> (0x00000000d7394c60) thrown at [D:\jenkins\workspace\JDK8u-WIN64\open_source\openjdk\jdk8u-shenandoah-aarch64-shenandoah-jdk8u242-b08\hotspot\
+Event: 3.050 Thread 0x0000000000b30000 Exception <a 'java/lang/NoSuchMethodError': java.lang.Object.lambda$andThen$1(Ljava/util/function/Function;Ljava/lang/Object;)Ljava/lang/Object;> (0x00000000d7716628) thrown at [D:\jenkins\workspace\JDK8u-WIN64\open_source\openjdk\jdk8u-shenandoah-aarch64
+Event: 3.198 Thread 0x0000000000b30000 Exception <a 'java/lang/IncompatibleClassChangeError': Found class java.lang.Object, but interface was expected> (0x00000000d78acb38) thrown at [D:\jenkins\workspace\JDK8u-WIN64\open_source\openjdk\jdk8u-shenandoah-aarch64-shenandoah-jdk8u242-b08\hotspot\
+Event: 3.202 Thread 0x0000000000b30000 Exception <a 'java/lang/NoSuchMethodError': java.lang.Object.lambda$ofVoidMethod$0(Lorg/junit/jupiter/engine/execution/ExecutableInvoker$ReflectiveInterceptorCall$VoidMethodInterceptorCall;Lorg/junit/jupiter/api/extension/InvocationInterceptor;Lorg/junit/
+Event: 3.225 Thread 0x0000000000b30000 Exception <a 'java/lang/IncompatibleClassChangeError': Found class java.lang.Object, but interface was expected> (0x00000000d791e248) thrown at [D:\jenkins\workspace\JDK8u-WIN64\open_source\openjdk\jdk8u-shenandoah-aarch64-shenandoah-jdk8u242-b08\hotspot\
+Event: 3.226 Thread 0x0000000000b30000 Exception <a 'java/lang/NoSuchMethodError': java.lang.Object.lambda$accept$0(Lorg/junit/platform/engine/TestDescriptor$Visitor;Lorg/junit/platform/engine/TestDescriptor;)V> (0x00000000d7922ab0) thrown at [D:\jenkins\workspace\JDK8u-WIN64\open_source\openj
+Event: 3.238 Thread 0x0000000000b30000 Exception <a 'java/lang/NoSuchMethodError': java.lang.Object.containsTests(Lorg/junit/platform/engine/TestDescriptor;)Z> (0x00000000d795d680) thrown at [D:\jenkins\workspace\JDK8u-WIN64\open_source\openjdk\jdk8u-shenandoah-aarch64-shenandoah-jdk8u242-b08\
+Event: 3.397 Thread 0x0000000000b30000 Exception <a 'java/lang/IncompatibleClassChangeError': Found class java.lang.Object, but interface was expected> (0x00000000d7cd33a0) thrown at [D:\jenkins\workspace\JDK8u-WIN64\open_source\openjdk\jdk8u-shenandoah-aarch64-shenandoah-jdk8u242-b08\hotspot\
+Event: 3.459 Thread 0x0000000000b30000 Exception <a 'java/lang/NoSuchMethodError': java.lang.Object.lambda$comparing$77a9974f$1(Ljava/util/function/Function;Ljava/lang/Object;Ljava/lang/Object;)I> (0x00000000d7df03a8) thrown at [D:\jenkins\workspace\JDK8u-WIN64\open_source\openjdk\jdk8u-shenan
+Event: 3.466 Thread 0x0000000000b30000 Exception <a 'java/lang/NoSuchMethodError': java.lang.Object.lambda$thenComparing$36697e65$1(Ljava/util/Comparator;Ljava/lang/Object;Ljava/lang/Object;)I> (0x00000000d7e0a528) thrown at [D:\jenkins\workspace\JDK8u-WIN64\open_source\openjdk\jdk8u-shenandoa
+Event: 3.590 Thread 0x0000000000b30000 Exception <a 'java/lang/NoSuchMethodError': java.lang.Object.lambda$and$0(Ljava/util/function/Predicate;Ljava/lang/Object;)Z> (0x00000000d81257a0) thrown at [D:\jenkins\workspace\JDK8u-WIN64\open_source\openjdk\jdk8u-shenandoah-aarch64-shenandoah-jdk8u242
+Event: 3.663 Thread 0x0000000000b30000 Exception <a 'java/lang/IncompatibleClassChangeError': Found class java.lang.Object, but interface was expected> (0x00000000d82a6948) thrown at [D:\jenkins\workspace\JDK8u-WIN64\open_source\openjdk\jdk8u-shenandoah-aarch64-shenandoah-jdk8u242-b08\hotspot\
+Event: 3.798 Thread 0x0000000000b30000 Exception <a 'java/io/FileNotFoundException'> (0x00000000d65d0800) thrown at [D:\jenkins\workspace\JDK8u-WIN64\open_source\openjdk\jdk8u-shenandoah-aarch64-shenandoah-jdk8u242-b08\hotspot\src\share\vm\prims\jni.cpp, line 710]
+Event: 11.873 Thread 0x0000000000b30000 Exception <a 'java/lang/NoSuchMethodError': org.slf4j.impl.StaticMDCBinder.getSingleton()Lorg/slf4j/impl/StaticMDCBinder;> (0x00000000d71cbd40) thrown at [D:\jenkins\workspace\JDK8u-WIN64\open_source\openjdk\jdk8u-shenandoah-aarch64-shenandoah-jdk8u242-b0
+
+Events (250 events):
+Event: 11.866 Thread 0x0000000000b30000 DEOPT UNPACKING pc=0x00000000028675d0 sp=0x000000000281aba0 mode 1
+Event: 11.867 loading class ch/qos/logback/classic/spi/LoggingEvent
+Event: 11.867 loading class ch/qos/logback/classic/spi/LoggingEvent done
+Event: 11.867 Thread 0x0000000000b30000 DEOPT PACKING pc=0x0000000002aa2cc1 sp=0x000000000281ace0
+Event: 11.867 Thread 0x0000000000b30000 DEOPT UNPACKING pc=0x00000000028675d0 sp=0x000000000281aa30 mode 1
+Event: 11.867 Executing VM operation: RevokeBias
+Event: 11.867 Executing VM operation: RevokeBias done
+Event: 11.867 Thread 0x0000000000b30000 DEOPT PACKING pc=0x000000000298bcdc sp=0x000000000281ad60
+Event: 11.867 Thread 0x0000000000b30000 DEOPT UNPACKING pc=0x00000000028675d0 sp=0x000000000281ab80 mode 1
+Event: 11.867 Executing VM operation: RevokeBias
+Event: 11.867 Executing VM operation: RevokeBias done
+Event: 11.867 Thread 0x0000000000b30000 DEOPT PACKING pc=0x000000000298ba74 sp=0x000000000281aef0
+Event: 11.867 Thread 0x0000000000b30000 DEOPT UNPACKING pc=0x00000000028675d0 sp=0x000000000281ad10 mode 1
+Event: 11.868 loading class ch/qos/logback/classic/spi/IThrowableProxy
+Event: 11.868 loading class ch/qos/logback/classic/spi/IThrowableProxy done
+Event: 11.868 Thread 0x0000000000b30000 DEOPT PACKING pc=0x0000000002aa2cc1 sp=0x000000000281a000
+Event: 11.868 Thread 0x0000000000b30000 DEOPT UNPACKING pc=0x00000000028675d0 sp=0x0000000002819d50 mode 1
+Event: 11.868 Executing VM operation: RevokeBias
+Event: 11.868 Executing VM operation: RevokeBias done
+Event: 11.868 Thread 0x0000000000b30000 DEOPT PACKING pc=0x000000000298bcdc sp=0x000000000281a080
+Event: 11.868 Thread 0x0000000000b30000 DEOPT UNPACKING pc=0x00000000028675d0 sp=0x0000000002819ea0 mode 1
+Event: 11.868 Executing VM operation: RevokeBias
+Event: 11.868 Executing VM operation: RevokeBias done
+Event: 11.868 Thread 0x0000000000b30000 DEOPT PACKING pc=0x000000000298ba74 sp=0x000000000281a210
+Event: 11.868 Thread 0x0000000000b30000 DEOPT UNPACKING pc=0x00000000028675d0 sp=0x000000000281a030 mode 1
+Event: 11.869 loading class ch/qos/logback/classic/spi/EventArgUtil
+Event: 11.869 loading class ch/qos/logback/classic/spi/EventArgUtil done
+Event: 11.869 Thread 0x0000000000b30000 DEOPT PACKING pc=0x0000000002aa2cc1 sp=0x000000000281a930
+Event: 11.869 Thread 0x0000000000b30000 DEOPT UNPACKING pc=0x00000000028675d0 sp=0x000000000281a680 mode 1
+Event: 11.869 Executing VM operation: RevokeBias
+Event: 11.869 Executing VM operation: RevokeBias done
+Event: 11.869 Thread 0x0000000000b30000 DEOPT PACKING pc=0x000000000298bcdc sp=0x000000000281a9b0
+Event: 11.869 Thread 0x0000000000b30000 DEOPT UNPACKING pc=0x00000000028675d0 sp=0x000000000281a7d0 mode 1
+Event: 11.869 Executing VM operation: RevokeBias
+Event: 11.869 Executing VM operation: RevokeBias done
+Event: 11.870 Thread 0x0000000000b30000 DEOPT PACKING pc=0x000000000298ba74 sp=0x000000000281ab40
+Event: 11.870 Thread 0x0000000000b30000 DEOPT UNPACKING pc=0x00000000028675d0 sp=0x000000000281a960 mode 1
+Event: 11.870 loading class org/slf4j/MDC
+Event: 11.870 loading class org/slf4j/MDC done
+Event: 11.870 Thread 0x0000000000b30000 DEOPT PACKING pc=0x0000000002aa2cc1 sp=0x000000000281a6f0
+Event: 11.870 Thread 0x0000000000b30000 DEOPT UNPACKING pc=0x00000000028675d0 sp=0x000000000281a440 mode 1
+Event: 11.870 Executing VM operation: RevokeBias
+Event: 11.871 Executing VM operation: RevokeBias done
+Event: 11.871 Thread 0x0000000000b30000 DEOPT PACKING pc=0x000000000298bcdc sp=0x000000000281a770
+Event: 11.871 Thread 0x0000000000b30000 DEOPT UNPACKING pc=0x00000000028675d0 sp=0x000000000281a590 mode 1
+Event: 11.871 Executing VM operation: RevokeBias
+Event: 11.871 Executing VM operation: RevokeBias done
+Event: 11.871 Thread 0x0000000000b30000 DEOPT PACKING pc=0x000000000298ba74 sp=0x000000000281a900
+Event: 11.871 Thread 0x0000000000b30000 DEOPT UNPACKING pc=0x00000000028675d0 sp=0x000000000281a720 mode 1
+Event: 11.872 loading class org/slf4j/spi/MDCAdapter
+Event: 11.872 loading class org/slf4j/spi/MDCAdapter done
+Event: 11.872 Thread 0x0000000000b30000 DEOPT PACKING pc=0x0000000002aa2cc1 sp=0x0000000002819c00
+Event: 11.872 Thread 0x0000000000b30000 DEOPT UNPACKING pc=0x00000000028675d0 sp=0x0000000002819950 mode 1
+Event: 11.872 Executing VM operation: RevokeBias
+Event: 11.872 Executing VM operation: RevokeBias done
+Event: 11.872 Thread 0x0000000000b30000 DEOPT PACKING pc=0x000000000298bcdc sp=0x0000000002819c80
+Event: 11.872 Thread 0x0000000000b30000 DEOPT UNPACKING pc=0x00000000028675d0 sp=0x0000000002819aa0 mode 1
+Event: 11.872 Executing VM operation: RevokeBias
+Event: 11.872 Executing VM operation: RevokeBias done
+Event: 11.872 Thread 0x0000000000b30000 DEOPT PACKING pc=0x000000000298ba74 sp=0x0000000002819e10
+Event: 11.872 Thread 0x0000000000b30000 DEOPT UNPACKING pc=0x00000000028675d0 sp=0x0000000002819c30 mode 1
+Event: 11.872 loading class org/slf4j/impl/StaticMDCBinder
+Event: 11.872 loading class org/slf4j/impl/StaticMDCBinder done
+Event: 11.873 Thread 0x0000000000b30000 DEOPT PACKING pc=0x0000000002aa2cc1 sp=0x0000000002819d40
+Event: 11.873 Thread 0x0000000000b30000 DEOPT UNPACKING pc=0x00000000028675d0 sp=0x0000000002819a90 mode 1
+Event: 11.873 Executing VM operation: RevokeBias
+Event: 11.873 Executing VM operation: RevokeBias done
+Event: 11.873 Thread 0x0000000000b30000 DEOPT PACKING pc=0x000000000298bcdc sp=0x0000000002819dc0
+Event: 11.873 Thread 0x0000000000b30000 DEOPT UNPACKING pc=0x00000000028675d0 sp=0x0000000002819be0 mode 1
+Event: 11.873 Executing VM operation: RevokeBias
+Event: 11.873 Executing VM operation: RevokeBias done
+Event: 11.873 Thread 0x0000000000b30000 DEOPT PACKING pc=0x000000000298ba74 sp=0x0000000002819f50
+Event: 11.873 Thread 0x0000000000b30000 DEOPT UNPACKING pc=0x00000000028675d0 sp=0x0000000002819d70 mode 1
+Event: 11.873 loading class ch/qos/logback/classic/util/LogbackMDCAdapter
+Event: 11.873 loading class ch/qos/logback/classic/util/LogbackMDCAdapter done
+Event: 11.873 Thread 0x0000000000b30000 DEOPT PACKING pc=0x0000000002aa2cc1 sp=0x0000000002819f90
+Event: 11.873 Thread 0x0000000000b30000 DEOPT UNPACKING pc=0x00000000028675d0 sp=0x0000000002819ce0 mode 1
+Event: 11.873 Executing VM operation: RevokeBias
+Event: 11.873 Executing VM operation: RevokeBias done
+Event: 11.873 Thread 0x0000000000b30000 DEOPT PACKING pc=0x000000000298bcdc sp=0x000000000281a010
+Event: 11.873 Thread 0x0000000000b30000 DEOPT UNPACKING pc=0x00000000028675d0 sp=0x0000000002819e30 mode 1
+Event: 11.873 Executing VM operation: RevokeBias
+Event: 11.874 Executing VM operation: RevokeBias done
+Event: 11.874 Thread 0x0000000000b30000 DEOPT PACKING pc=0x000000000298ba74 sp=0x000000000281a1a0
+Event: 11.874 Thread 0x0000000000b30000 DEOPT UNPACKING pc=0x00000000028675d0 sp=0x0000000002819fc0 mode 1
+Event: 11.874 loading class java/text/DontCareFieldPosition
+Event: 11.874 loading class java/text/DontCareFieldPosition done
+Event: 11.874 loading class java/text/DontCareFieldPosition$1
+Event: 11.874 loading class java/text/Format$FieldDelegate
+Event: 11.874 loading class java/text/Format$FieldDelegate done
+Event: 11.874 loading class java/text/DontCareFieldPosition$1 done
+Event: 11.875 loading class java/text/NumberFormat$Field
+Event: 11.875 loading class java/text/NumberFormat$Field done
+Event: 11.875 loading class ch/qos/logback/core/CoreConstants
+Event: 11.875 loading class ch/qos/logback/core/CoreConstants done
+Event: 11.875 Thread 0x0000000000b30000 DEOPT PACKING pc=0x0000000002aa2cc1 sp=0x000000000281a780
+Event: 11.875 Thread 0x0000000000b30000 DEOPT UNPACKING pc=0x00000000028675d0 sp=0x000000000281a4d0 mode 1
+Event: 11.875 Executing VM operation: RevokeBias
+Event: 11.875 Executing VM operation: RevokeBias done
+Event: 11.875 Thread 0x0000000000b30000 DEOPT PACKING pc=0x000000000298bcdc sp=0x000000000281a800
+Event: 11.875 Thread 0x0000000000b30000 DEOPT UNPACKING pc=0x00000000028675d0 sp=0x000000000281a620 mode 1
+Event: 11.875 Executing VM operation: RevokeBias
+Event: 11.875 Executing VM operation: RevokeBias done
+Event: 11.875 Thread 0x0000000000b30000 DEOPT PACKING pc=0x000000000298ba74 sp=0x000000000281a990
+Event: 11.875 Thread 0x0000000000b30000 DEOPT UNPACKING pc=0x00000000028675d0 sp=0x000000000281a7b0 mode 1
+Event: 43.715 Executing VM operation: EnterInterpOnlyMode
+Event: 43.715 Executing VM operation: EnterInterpOnlyMode done
+Event: 43.715 Executing VM operation: GetCurrentLocation
+Event: 43.715 Executing VM operation: GetCurrentLocation done
+Event: 43.715 Executing VM operation: ChangeSingleStep
+Event: 43.715 Executing VM operation: ChangeSingleStep done
+Event: 43.715 Executing VM operation: ChangeSingleStep
+Event: 43.715 Executing VM operation: ChangeSingleStep done
+Event: 43.716 Executing VM operation: GetCurrentLocation
+Event: 43.716 Executing VM operation: GetCurrentLocation done
+Event: 43.716 Executing VM operation: ChangeSingleStep
+Event: 43.716 Executing VM operation: ChangeSingleStep done
+Event: 43.716 Executing VM operation: ChangeSingleStep
+Event: 43.716 Executing VM operation: ChangeSingleStep done
+Event: 43.716 Executing VM operation: GetCurrentLocation
+Event: 43.716 Executing VM operation: GetCurrentLocation done
+Event: 43.716 Executing VM operation: ChangeSingleStep
+Event: 43.716 Executing VM operation: ChangeSingleStep done
+Event: 43.716 Executing VM operation: ChangeSingleStep
+Event: 43.716 Executing VM operation: ChangeSingleStep done
+Event: 43.717 Executing VM operation: ForceSafepoint
+Event: 43.717 Executing VM operation: ForceSafepoint done
+Event: 43.721 Executing VM operation: GetOrSetLocal
+Event: 43.721 Executing VM operation: GetOrSetLocal done
+Event: 43.822 Executing VM operation: GetOrSetLocal
+Event: 43.822 Executing VM operation: GetOrSetLocal done
+Event: 44.097 loading class sun/nio/cs/ISO_8859_1$Decoder
+Event: 44.097 loading class sun/nio/cs/ISO_8859_1$Decoder done
+Event: 49.142 Executing VM operation: EnterInterpOnlyMode
+Event: 49.142 Executing VM operation: EnterInterpOnlyMode done
+Event: 49.143 Executing VM operation: GetCurrentLocation
+Event: 49.143 Executing VM operation: GetCurrentLocation done
+Event: 49.143 Executing VM operation: ChangeSingleStep
+Event: 49.143 Executing VM operation: ChangeSingleStep done
+Event: 49.143 Executing VM operation: ChangeSingleStep
+Event: 49.143 Executing VM operation: ChangeSingleStep done
+Event: 49.143 Executing VM operation: GetCurrentLocation
+Event: 49.143 Executing VM operation: GetCurrentLocation done
+Event: 49.143 Executing VM operation: ChangeSingleStep
+Event: 49.143 Executing VM operation: ChangeSingleStep done
+Event: 49.144 Executing VM operation: ChangeSingleStep
+Event: 49.144 Executing VM operation: ChangeSingleStep done
+Event: 49.144 Executing VM operation: ForceSafepoint
+Event: 49.144 Executing VM operation: ForceSafepoint done
+Event: 49.152 Executing VM operation: GetOrSetLocal
+Event: 49.152 Executing VM operation: GetOrSetLocal done
+Event: 49.158 Executing VM operation: GetOrSetLocal
+Event: 49.158 Executing VM operation: GetOrSetLocal done
+Event: 55.198 Executing VM operation: EnterInterpOnlyMode
+Event: 55.198 Executing VM operation: EnterInterpOnlyMode done
+Event: 55.198 Executing VM operation: GetCurrentLocation
+Event: 55.199 Executing VM operation: GetCurrentLocation done
+Event: 55.199 Executing VM operation: ChangeSingleStep
+Event: 55.199 Executing VM operation: ChangeSingleStep done
+Event: 55.199 Executing VM operation: ChangeSingleStep
+Event: 55.199 Executing VM operation: ChangeSingleStep done
+Event: 55.199 Executing VM operation: GetCurrentLocation
+Event: 55.199 Executing VM operation: GetCurrentLocation done
+Event: 55.199 Executing VM operation: ChangeSingleStep
+Event: 55.199 Executing VM operation: ChangeSingleStep done
+Event: 55.199 Executing VM operation: ChangeSingleStep
+Event: 55.199 Executing VM operation: ChangeSingleStep done
+Event: 55.200 Executing VM operation: GetCurrentLocation
+Event: 55.200 Executing VM operation: GetCurrentLocation done
+Event: 55.200 Executing VM operation: ChangeSingleStep
+Event: 55.200 Executing VM operation: ChangeSingleStep done
+Event: 55.200 Executing VM operation: ChangeSingleStep
+Event: 55.200 Executing VM operation: ChangeSingleStep done
+Event: 55.200 Executing VM operation: GetCurrentLocation
+Event: 55.200 Executing VM operation: GetCurrentLocation done
+Event: 55.200 Executing VM operation: ChangeSingleStep
+Event: 55.200 Executing VM operation: ChangeSingleStep done
+Event: 55.200 Executing VM operation: ChangeSingleStep
+Event: 55.200 Executing VM operation: ChangeSingleStep done
+Event: 55.201 Executing VM operation: ForceSafepoint
+Event: 55.201 Executing VM operation: ForceSafepoint done
+Event: 55.207 Executing VM operation: GetOrSetLocal
+Event: 55.207 Executing VM operation: GetOrSetLocal done
+Event: 55.228 Executing VM operation: GetOrSetLocal
+Event: 55.228 Executing VM operation: GetOrSetLocal done
+Event: 148.410 Executing VM operation: GetOrSetLocal
+Event: 148.410 Executing VM operation: GetOrSetLocal done
+Event: 153.646 Executing VM operation: GetOrSetLocal
+Event: 153.646 Executing VM operation: GetOrSetLocal done
+Event: 153.647 Executing VM operation: GetOrSetLocal
+Event: 153.647 Executing VM operation: GetOrSetLocal done
+Event: 189.945 Executing VM operation: GetOrSetLocal
+Event: 189.945 Executing VM operation: GetOrSetLocal done
+Event: 189.976 Executing VM operation: GetOrSetLocal
+Event: 189.977 Executing VM operation: GetOrSetLocal done
+Event: 189.978 Executing VM operation: GetOrSetLocal
+Event: 189.978 Executing VM operation: GetOrSetLocal done
+Event: 199.487 Executing VM operation: GetOrSetLocal
+Event: 199.487 Executing VM operation: GetOrSetLocal done
+Event: 199.497 Executing VM operation: GetOrSetLocal
+Event: 199.497 Executing VM operation: GetOrSetLocal done
+Event: 199.498 Executing VM operation: GetOrSetLocal
+Event: 199.498 Executing VM operation: GetOrSetLocal done
+Event: 261.508 Executing VM operation: ChangeBreakpoints
+Event: 261.508 Executing VM operation: ChangeBreakpoints done
+Event: 261.508 Executing VM operation: ChangeBreakpoints
+Event: 261.508 Executing VM operation: ChangeBreakpoints done
+Event: 261.514 Executing VM operation: RedefineClasses
+Event: 261.554 Executing VM operation: RedefineClasses done
+Event: 261.639 Executing VM operation: ChangeBreakpoints
+Event: 261.640 Executing VM operation: ChangeBreakpoints done
+Event: 261.644 Executing VM operation: ChangeBreakpoints
+Event: 261.645 Executing VM operation: ChangeBreakpoints done
+Event: 261.795 Executing VM operation: GetOrSetLocal
+Event: 261.795 Executing VM operation: GetOrSetLocal done
+Event: 261.796 Executing VM operation: GetOrSetLocal
+Event: 261.796 Executing VM operation: GetOrSetLocal done
+Event: 433.185 Executing VM operation: ChangeBreakpoints
+Event: 433.185 Executing VM operation: ChangeBreakpoints done
+Event: 433.185 Executing VM operation: ChangeBreakpoints
+Event: 433.186 Executing VM operation: ChangeBreakpoints done
+Event: 433.195 Executing VM operation: RedefineClasses
+Event: 433.253 Executing VM operation: RedefineClasses done
+Event: 433.267 Executing VM operation: ChangeBreakpoints
+Event: 433.268 Executing VM operation: ChangeBreakpoints done
+Event: 433.271 Executing VM operation: ChangeBreakpoints
+Event: 433.272 Executing VM operation: ChangeBreakpoints done
+Event: 433.296 Executing VM operation: GetOrSetLocal
+Event: 433.297 Executing VM operation: GetOrSetLocal done
+Event: 433.319 Executing VM operation: GetOrSetLocal
+Event: 433.319 Executing VM operation: GetOrSetLocal done
+Event: 529.597 Executing VM operation: ChangeBreakpoints
+Event: 529.597 Executing VM operation: ChangeBreakpoints done
+Event: 529.602 Executing VM operation: ChangeBreakpoints
+Event: 529.603 Executing VM operation: ChangeBreakpoints done
+Event: 529.603 Executing VM operation: ChangeBreakpoints
+Event: 529.603 Executing VM operation: ChangeBreakpoints done
+Event: 529.604 Executing VM operation: ChangeBreakpoints
+Event: 529.605 Executing VM operation: ChangeBreakpoints done
+Event: 537.661 Executing VM operation: ChangeBreakpoints
+Event: 537.661 Executing VM operation: ChangeBreakpoints done
+Event: 537.662 Executing VM operation: ChangeBreakpoints
+Event: 537.662 Executing VM operation: ChangeBreakpoints done
+Event: 537.662 Executing VM operation: ChangeBreakpoints
+Event: 537.663 Executing VM operation: ChangeBreakpoints done
+Event: 562.505 Executing VM operation: ChangeBreakpoints
+Event: 562.505 Executing VM operation: ChangeBreakpoints done
+Event: 562.769 Executing VM operation: ChangeBreakpoints
+Event: 562.770 Executing VM operation: ChangeBreakpoints done
+Event: 562.869 Executing VM operation: GetOrSetLocal
+
+
+Dynamic libraries:
+0x00007ff68c250000 - 0x00007ff68c298000 	C:\Program Files\Huawei\jdk1.8.0_242\bin\java.exe
+0x00007ffc961f0000 - 0x00007ffc963e5000 	C:\windows\SYSTEM32\ntdll.dll
+0x00007ffc94930000 - 0x00007ffc949ed000 	C:\windows\System32\KERNEL32.DLL
+0x00007ffc93f40000 - 0x00007ffc9420d000 	C:\windows\System32\KERNELBASE.dll
+0x00007ffc95a00000 - 0x00007ffc95aae000 	C:\windows\System32\ADVAPI32.dll
+0x00007ffc95b60000 - 0x00007ffc95bfe000 	C:\windows\System32\msvcrt.dll
+0x00007ffc95ac0000 - 0x00007ffc95b5c000 	C:\windows\System32\sechost.dll
+0x00007ffc95770000 - 0x00007ffc95895000 	C:\windows\System32\RPCRT4.dll
+0x00007ffc94790000 - 0x00007ffc94930000 	C:\windows\System32\USER32.dll
+0x00007ffc93af0000 - 0x00007ffc93b12000 	C:\windows\System32\win32u.dll
+0x00007ffc95960000 - 0x00007ffc9598a000 	C:\windows\System32\GDI32.dll
+0x00007ffc93b20000 - 0x00007ffc93c2b000 	C:\windows\System32\gdi32full.dll
+0x00007ffc93e30000 - 0x00007ffc93ecd000 	C:\windows\System32\msvcp_win.dll
+0x00007ffc93c80000 - 0x00007ffc93d80000 	C:\windows\System32\ucrtbase.dll
+0x00007ffc7e940000 - 0x00007ffc7ebda000 	C:\windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_60b5254171f9507e\COMCTL32.dll
+0x00007ffc95930000 - 0x00007ffc95960000 	C:\windows\System32\IMM32.DLL
+0x00007ffc8c3e0000 - 0x00007ffc8c3f5000 	C:\Program Files\Huawei\jdk1.8.0_242\jre\bin\vcruntime140.dll
+0x00007ffc60a10000 - 0x00007ffc60aab000 	C:\Program Files\Huawei\jdk1.8.0_242\jre\bin\msvcp140.dll
+0x0000000070990000 - 0x0000000071203000 	C:\Program Files\Huawei\jdk1.8.0_242\jre\bin\server\jvm.dll
+0x00007ffc945a0000 - 0x00007ffc945a8000 	C:\windows\System32\PSAPI.DLL
+0x00007ffc7b610000 - 0x00007ffc7b637000 	C:\windows\SYSTEM32\WINMM.dll
+0x00007ffc7bc80000 - 0x00007ffc7bc89000 	C:\windows\SYSTEM32\WSOCK32.dll
+0x00007ffc95990000 - 0x00007ffc959fb000 	C:\windows\System32\WS2_32.dll
+0x00007ffc84400000 - 0x00007ffc8440a000 	C:\windows\SYSTEM32\VERSION.dll
+0x00007ffc92270000 - 0x00007ffc92282000 	C:\windows\SYSTEM32\kernel.appcore.dll
+0x00007ffc8c3d0000 - 0x00007ffc8c3e0000 	C:\Program Files\Huawei\jdk1.8.0_242\jre\bin\verify.dll
+0x00007ffc7da10000 - 0x00007ffc7da3b000 	C:\Program Files\Huawei\jdk1.8.0_242\jre\bin\java.dll
+0x00007ffc6f200000 - 0x00007ffc6f236000 	C:\Program Files\Huawei\jdk1.8.0_242\jre\bin\jdwp.dll
+0x00007ffc895a0000 - 0x00007ffc895a8000 	C:\Program Files\Huawei\jdk1.8.0_242\jre\bin\npt.dll
+0x00007ffc6ef10000 - 0x00007ffc6ef44000 	C:\Program Files\Huawei\jdk1.8.0_242\jre\bin\instrument.dll
+0x00007ffc87eb0000 - 0x00007ffc87ec8000 	C:\Program Files\Huawei\jdk1.8.0_242\jre\bin\zip.dll
+0x00007ffc95020000 - 0x00007ffc95764000 	C:\windows\System32\SHELL32.dll
+0x00007ffc919e0000 - 0x00007ffc92174000 	C:\windows\SYSTEM32\windows.storage.dll
+0x00007ffc94240000 - 0x00007ffc94594000 	C:\windows\System32\combase.dll
+0x00007ffc93290000 - 0x00007ffc932bc000 	C:\windows\SYSTEM32\Wldp.dll
+0x00007ffc960a0000 - 0x00007ffc9614d000 	C:\windows\System32\SHCORE.dll
+0x00007ffc95cf0000 - 0x00007ffc95d45000 	C:\windows\System32\shlwapi.dll
+0x00007ffc93840000 - 0x00007ffc9385f000 	C:\windows\SYSTEM32\profapi.dll
+0x00007ffc89530000 - 0x00007ffc8953a000 	C:\Program Files\Huawei\jdk1.8.0_242\jre\bin\dt_socket.dll
+0x00007ffc92ff0000 - 0x00007ffc9305a000 	C:\windows\system32\mswsock.dll
+0x00007ffc916b0000 - 0x00007ffc91894000 	C:\windows\SYSTEM32\dbghelp.dll
+0x00007ffc93900000 - 0x00007ffc93982000 	C:\windows\System32\bcryptPrimitives.dll
+
+VM Arguments:
+jvm_args: -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:52719,suspend=y,server=n -ea -Didea.test.cyclic.buffer.size=1048576 -javaagent:C:\Users\z50028050\AppData\Local\JetBrains\IntelliJIdea2022.1\captureAgent\debugger-agent.jar -Dfile.encoding=UTF-8 
+java_command: com.intellij.rt.junit.JUnitStarter -ideVersion5 -junit5 CglibProxyTest
+java_class_path (initial): C:\Users\z50028050\.m2\repository\org\junit\platform\junit-platform-launcher\1.5.2\junit-platform-launcher-1.5.2.jar;C:\Users\z50028050\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\z50028050\.m2\repository\org\junit\platform\junit-platform-engine\1.5.2\junit-platform-engine-1.5.2.jar;C:\Users\z50028050\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\z50028050\.m2\repository\org\junit\platform\junit-platform-commons\1.5.2\junit-platform-commons-1.5.2.jar;D:\ProgramFiles\IntelliJ IDEA 2022.1\lib\idea_rt.jar;D:\ProgramFiles\IntelliJ IDEA 2022.1\plugins\junit\lib\junit5-rt.jar;D:\ProgramFiles\IntelliJ IDEA 2022.1\plugins\junit\lib\junit-rt.jar;C:\Program Files\Huawei\jdk1.8.0_242\jre\lib\charsets.jar;C:\Program Files\Huawei\jdk1.8.0_242\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Huawei\jdk1.8.0_242\jre\lib\ext\cldrdata.jar;C:\Program Files\Huawei\jdk1.8.0_242\jre\lib\ext\dnsns.jar;C:\Program Files\Huawei\jdk1.8.0_242\jre\lib\ext\jaccess.jar;C:\Program Files\Huawei\jdk1.8.0_242\jre\lib\ext\jfxrt.jar;C:\Program Files\Huawei\jdk1.8.0_242\jre\lib\ext\localedata.jar;C:\Program Files\Huawei\jdk1.8.0_242\jre\lib\ext\nashorn.jar;C:\Program Files\Huawei\jdk1.8.0_242\jre\lib\ext\sunec.jar;C:\Program Files\Huawei\jdk1.8.0_242\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Huawei\jdk1.8.0_242\jre\lib\ext\sunmscapi.jar;C:\Program Files\Huawei\jdk1.8.0_242\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Huawei\jdk1.8.0_242\jre\lib\ext\zipfs.jar;C:\Program Files\Huawei\jdk1.8.0_242\jre\lib\jce.jar;C:\Program Files\Huawei\jdk1.8.0_242\jre\lib\jfxswt.jar;C:\Program Files\Huawei\jdk1.8.0_242\jre\lib\jsse.jar;C:\Program Files\Huawei\jdk1.8.0_242\jre\lib\management-agent.jar;C:\Program Files\Huawei\jdk1.8.0_242\jre\lib\resources.jar;C:\Program Files\Huawei\jdk1.8.0_242\jre\lib\rt.jar;D:\Internship\MyWork\项目代码\InternshipSummary\order-project-app\target\test-classes;D:\Internship\MyWo
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Huawei\jdk1.8.0_242
+CLASSPATH=.;C:\Program Files\Huawei\jdk1.8.0_242\bin;C:\Program Files\Huawei\jdk1.8.0_242\lib\dt.jar;C:\Program Files\Huawei\jdk1.8.0_242\lib\tools.jar
+PATH=C:\Program Files\Huawei\jdk1.8.0_242\bin;C:\Program Files\Huawei\jdk1.8.0_242\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Common Files\Oracle\Java\javapath;C:\windows;C:\windows\system32;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0;C:\Windows;C:\Windows\system32;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\Huawei\jdk1.8.0_242\jre\bin;D:\ProgramFiles\TortoiseGit\bin;D:\ProgramFiles\Git\cmd;D:\ProgramFiles\apache-tomcat-8.5.53\lib;D:\ProgramFiles\apache-tomcat-8.5.53\bin;D:\ProgramFiles\apache-maven-3.6.3\bin;D:\ProgramFiles\TortoiseSVN\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\z50028050\AppData\Local\Microsoft\WindowsApps;;D:\ProgramFiles\Fiddler
+USERNAME=z50028050
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 142 Stepping 9, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10.0 , 64 bit Build 19041 (10.0.19041.1706)
+
+CPU:total 4 (initial active 4) (2 cores per cpu, 2 threads per core) family 6 model 142 stepping 9, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, 3dnowpref, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2, adx
+
+Memory: 4k page, physical 8219368k(1153628k free), swap 18705128k(4604212k free)
+
+vm_info: OpenJDK 64-Bit Server VM (25.242-b08) for windows-amd64 JRE (1.8.0_242-Huawei_JDK_V100R001C00SPC181B003-b08), built on Feb  3 2020 20:00:00 by "Jenkins" with MS VC++ 16.2.5 (VS2019)
+
+time: Wed Aug 31 12:01:12 2022
+timezone: 中国标准时间
+elapsed time: 562 seconds (0d 0h 9m 22s)
+
