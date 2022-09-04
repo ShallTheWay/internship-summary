@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8ca2b445-2eae-452f-b2f3-24407e46c416" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/order-project-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-api/target/classes/com/huawei/shallwe/api/constants/OrderConstant.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-api/target/classes/com/huawei/shallwe/api/constants/OrderConstant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-api/target/classes/com/huawei/shallwe/api/dto/request/OrderProcessReq.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-api/target/classes/com/huawei/shallwe/api/dto/request/OrderProcessReq.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-api/target/classes/com/huawei/shallwe/api/dto/response/OrderProcessResp.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-api/target/classes/com/huawei/shallwe/api/dto/response/OrderProcessResp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-api/target/classes/com/huawei/shallwe/api/provider/OrderProcessProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-api/target/classes/com/huawei/shallwe/api/provider/OrderProcessProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-api/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-api/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-api/target/order-project-api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-api/target/order-project-api-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/hs_err_pid9408.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/src/main/java/com/huawei/shallwe/aop/ServiceTimeCostAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/src/main/java/com/huawei/shallwe/aop/ServiceTimeCostAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/target/classes/com/huawei/shallwe/OrderProcessApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/target/classes/com/huawei/shallwe/OrderProcessApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/target/classes/com/huawei/shallwe/anno/PcAnno.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/target/classes/com/huawei/shallwe/anno/PcAnno.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/target/classes/com/huawei/shallwe/aop/AnnotationPointcut.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/target/classes/com/huawei/shallwe/aop/AnnotationPointcut.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/target/classes/com/huawei/shallwe/aop/ServiceTimeCostAspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/target/classes/com/huawei/shallwe/aop/ServiceTimeCostAspect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/target/classes/com/huawei/shallwe/aop/ThisPointcutAspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/target/classes/com/huawei/shallwe/aop/ThisPointcutAspect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/target/classes/com/huawei/shallwe/config/HttpConverterConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/target/classes/com/huawei/shallwe/config/HttpConverterConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/target/classes/com/huawei/shallwe/provider/impl/OrderProcessProviderImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/target/classes/com/huawei/shallwe/provider/impl/OrderProcessProviderImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/target/classes/com/huawei/shallwe/service/OrderProcessService.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/target/classes/com/huawei/shallwe/service/OrderProcessService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/target/classes/com/huawei/shallwe/service/impl/OrderProcessServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/target/classes/com/huawei/shallwe/service/impl/OrderProcessServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/target/test-classes/JavaCodeGuide/BadKeyboard.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/target/test-classes/JavaCodeGuide/BadKeyboard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/target/test-classes/JavaCodeGuide/GDcl04.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/target/test-classes/JavaCodeGuide/GDcl04.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/target/test-classes/JavaCodeGuide/GTyp08.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/target/test-classes/JavaCodeGuide/GTyp08.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/target/test-classes/JavaCodeGuide/GoodKeyBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/target/test-classes/JavaCodeGuide/GoodKeyBoard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/AopTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/AopTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/CglibProxyTest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/CglibProxyTest$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/CglibProxyTest$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/CglibProxyTest$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/CglibProxyTest$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/CglibProxyTest$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/CglibProxyTest$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/CglibProxyTest$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/CglibProxyTest$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/CglibProxyTest$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/CglibProxyTest$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/CglibProxyTest$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/CglibProxyTest$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/CglibProxyTest$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/CglibProxyTest$BlogModel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/CglibProxyTest$BlogModel$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/CglibProxyTest$BlogModel$BlogContentModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/CglibProxyTest$BlogModel$BlogContentModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/CglibProxyTest$BlogModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/CglibProxyTest$BlogModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/CglibProxyTest$DefaultMethodInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/CglibProxyTest$DefaultMethodInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/CglibProxyTest$IMethodInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/CglibProxyTest$IMethodInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/CglibProxyTest$IService1.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/CglibProxyTest$IService1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/CglibProxyTest$IService2.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/CglibProxyTest$IService2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/CglibProxyTest$Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/CglibProxyTest$Service.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/CglibProxyTest$UserModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/CglibProxyTest$UserModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/CglibProxyTest$UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/CglibProxyTest$UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/CglibProxyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/CglibProxyTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/JavaProxyTest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/JavaProxyTest$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/JavaProxyTest$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/JavaProxyTest$10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/JavaProxyTest$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/JavaProxyTest$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/JavaProxyTest$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/JavaProxyTest$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/JavaProxyTest$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/JavaProxyTest$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/JavaProxyTest$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/JavaProxyTest$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/JavaProxyTest$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/JavaProxyTest$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/JavaProxyTest$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/JavaProxyTest$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/JavaProxyTest$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/JavaProxyTest$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/JavaProxyTest$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/JavaProxyTest$9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/JavaProxyTest$CostTimeInvocationHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/JavaProxyTest$CostTimeInvocationHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/JavaProxyTest$CostTimeProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/JavaProxyTest$CostTimeProxy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/JavaProxyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/JavaProxyTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/SpringAopTest$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/SpringAopTest$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/SpringAopTest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/SpringAopTest$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/SpringAopTest$2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/SpringAopTest$2$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/SpringAopTest$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/SpringAopTest$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/SpringAopTest$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/SpringAopTest$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/SpringAopTest$4$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/SpringAopTest$4$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/SpringAopTest$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/SpringAopTest$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/SpringAopTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-app/target/test-classes/SpringAop/SpringAopTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-repository/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-repository/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-repository/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-repository/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-repository/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-repository/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-project-repository/target/order-project-repository-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/order-project-repository/target/order-project-repository-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\ProgramFiles\.m2\repository" />
+        <option name="useMavenConfig" value="true" />
+        <option name="userSettingsFile" value="D:\ProgramFiles\apache-maven-3.8.6-bin\apache-maven-3.8.6\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectId" id="2EIXgH5HsvJDSn8sfN2J66Lhno5" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="C:/Program Files/Java" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DjangoTestsConfigurationType">
+      <module name="internship-summary" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="internship-summary" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="internship-summary" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <module name="internship-summary" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="internship-summary" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Python.FlaskServer">
+      <module name="internship-summary" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="OrderProcessApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="order-project-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.huawei.shallwe.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.huawei.shallwe.OrderProcessApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="internship-summary" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Autodetect">
+      <module name="internship-summary" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <module name="internship-summary" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.OrderProcessApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8ca2b445-2eae-452f-b2f3-24407e46c416" name="Changes" comment="" />
+      <created>1662284184587</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1662284184587</updated>
+      <workItem from="1662284187236" duration="3487000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
